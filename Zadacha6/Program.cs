@@ -2,19 +2,16 @@
 Console.Write("Введите значения a:");
 int a = int.Parse(Console.ReadLine());
 int n = 0;
-while (a>99)
+if (a>99)
 {
-    if (a<1000)
+    while (a>999)
     {
-        n = a % 10;
-        Console.WriteLine($"{n}");
+        a = a / 10;
     }
-    else
-    {
-    a = a % 10;
-    }
+    n = a % 10;
+    Console.WriteLine($"{n}");
 }    
-if (a<100)
+else
 {
     Console.WriteLine($"Третьей цифры нет");    
 }
