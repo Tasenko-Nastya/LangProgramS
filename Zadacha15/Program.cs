@@ -7,13 +7,21 @@ int[] GetArray(int size, int minV, int maxV){
     int[] res = new int [size];
     for (int i = 0; i < size; i++)
     {
-       res[i] = new Random().Next(minV, maxV); 
+       res[i] = new Random().Next(minV, maxV+1); 
     }
     return res;
 }
 
-int sumnech(int[] Array);{
+int Sumnech(int[] array)
+{
     int sum = 0;
-    int j = 0;
-    
+    for (int j = 0; j < array.Length; j+=2)
+    {
+       sum = sum + array[j]; 
+    }
+    return sum;
 }
+
+int[] array = GetArray(5, 0, 100);
+Console.WriteLine($"[{String.Join(", ", array)}]");    
+ Console.Write($"Сумма элементов, стоящих на нечётных позициях в массиве: {Sumnech(array)}");
