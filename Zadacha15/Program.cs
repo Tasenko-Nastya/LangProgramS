@@ -24,4 +24,4 @@ int Sumnech(int[] array)
 
 int[] array = GetArray(5, 0, 100);
 Console.WriteLine($"[{String.Join(", ", array)}]");    
- Console.Write($"Сумма элементов, стоящих на нечётных позициях в массиве: {Sumnech(array)}");
+Console.Write($"Сумма элементов, стоящих на нечётных позициях в массиве: {Sumnech(array)}");
