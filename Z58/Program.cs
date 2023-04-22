@@ -73,7 +73,7 @@ if (n != k)
 else
 {
     ResultMatrix(onematrix, twomatrix, threematrix);
-    Console.WriteLine($"\n произведение первой и второй матриц:");
+    Console.WriteLine($" произведение первой и второй матриц:");
     PrintMatrix(threematrix);
 }
 

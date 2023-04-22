@@ -59,5 +59,5 @@ string[] xyz = Console.ReadLine()!.Split(" ");
 int a = int.Parse( xyz[0]);
 int b = int.Parse( xyz[1]);
 int c = int.Parse( xyz[2]);
-int[, ,] array = GetArray(new int[] {a, b, c}, 10, 100);
+int[, ,] array = GetArray(new int[] {a, b, c}, 10, 99);
 PrintArray(array);

@@ -34,27 +34,6 @@ void PrintArray(int[,] array)
     }
 }
 
-//int[,] MinSum(int[,] array)
-//{
-//    int sum = 0;
-//    int index = 0;
-//    int minSum = 1;
-//    for (int i = 0; i < array.GetLength(0); i++)
-//    {
-//        
-//        for (int j = 0; j < array.GetLength(1); j++)
-//        {
-//            sum = sum + array[i, j];
- //       }
-//        if (sum < minSum)
-//        {
-//            minSum = sum;
-//            index++;
-//        }
-//        Console.WriteLine($"строка с наименьшей суммой елементов под номером {index} с суммой элементов равной {minSum}");
-//    }
-///   return array; 
-//}
 
 int SumLineEl(int[,] array, int i)
 {
@@ -75,10 +54,10 @@ void MinSum(int[,] array)
         if (sumLine > temp )
         {
             sumLine = temp;
-            minSum = i+1;
+            minSum = i + 1;
         }
     }
-    Console.WriteLine($"\n{minSum} строка является строкой с наименьшей суммой, равной ({sumLine})");
+    Console.WriteLine($"{minSum} строка является строкой с наименьшей суммой, равной ({sumLine})");
 }
 
 
