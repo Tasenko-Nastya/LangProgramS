@@ -20,5 +20,4 @@ int Summa(int mn, int n)
         return n;
     }
     return n + Summa(m,  n - 1);
-    
 }

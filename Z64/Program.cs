@@ -16,6 +16,5 @@ void WriteNumber(int n, int i)
     if(i >  n) return;
     WriteNumber( n,  i + 1);
     Console.Write( i + ",");
-    
-    
+   
 }
